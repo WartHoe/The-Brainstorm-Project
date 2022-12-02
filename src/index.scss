@@ -43,9 +43,14 @@ body {
   margin: 0 auto;
   width: 300px;
   height: 90px;
+  transition: box-shadow 0.3s;
   
   p{
     margin: 0;
+  }
+
+  &:hover{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
   }
 }
 
@@ -53,3 +58,11 @@ body {
   padding-top: 130px;
 }
 
+.test{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

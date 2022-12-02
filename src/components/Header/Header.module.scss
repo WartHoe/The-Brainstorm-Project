@@ -1,19 +1,41 @@
 header{
+  div{
     background: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 30px 30px;
-    max-width: 84%;
 
     margin: 0 auto;
-    padding: 33px;
-    
-    position: absolute;
-
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    transition: padding 1s;
+
+    position: absolute;
+
+    transition: top 1s;
+  }
+}
+
+.hiddenHeader{
+    div{
+      max-width: 100%;
+      width: 2150px;
+      height: 60em;
+      h1{
+        text-align: center;
+        margin-top: 300px;
+        text-transform: uppercase;
+      }
+    }
+
+}
+
+.defaultHeader{
+
+    div{
+    border-radius: 0px 0px 30px 30px;
+    max-width: 84%;
+    padding: 33px;
+    }
     
     
     center{
@@ -34,11 +56,14 @@ header{
       height: 40px;
       cursor:pointer;
     }
-  }
+  }  
+}
+.header{
+  display: flex;
 }
 
 .headerList{
-  transition: all 0.5s;
+  transition: transform 0.9s, filter 0.1s;
   &:hover{
     filter: drop-shadow(0px 0px 1.5px rgb(0, 0, 0)); 
   }

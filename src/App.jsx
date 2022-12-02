@@ -12,7 +12,9 @@ function App() {
       <TimerField/>
       <div className="contentStart">
         <h3>And press this button when you'll be ready :)</h3>
-        <div className="buttonStart d-flex justify-center align-center"><p>start</p></div>
+        <button className="buttonStart d-flex justify-center align-center cu-p">
+        <div><p>start</p></div>
+        </button>
       </div>
     </div>
     </div>
