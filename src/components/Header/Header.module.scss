@@ -1,6 +1,11 @@
-header{
-  div{
-    background: #FFFFFF;
+.headerContent{
+  center{
+    position: absolute;
+    left:33px;
+    bottom: 33px;
+  }
+
+  background: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 
     margin: 0 auto;
@@ -10,27 +15,73 @@ header{
     right: 0;
 
     position: absolute;
+    height: 1000px;
 
     transition: top 1s;
-  }
 }
 
-.hiddenHeader{
-    div{
-      max-width: 100%;
-      width: 2150px;
-      height: 60em;
-      h1{
-        text-align: center;
-        margin-top: 300px;
-        text-transform: uppercase;
-      }
-    }
+.headerSaving{
+  margin: 0 auto;
+  h1{
+    text-align: center;
+    transform: translateY(4em);
+    font-weight: 900;
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 1em;
+  }
 
+  input{
+    
+    transform: translateY(4em);
+    font-weight: 900;
+    font-size: 48px;
+  
+    display: flex;
+  
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    border-radius: 30px;
+    max-width: 80%;
+    width: 1000px;
+    height: 110px;
+    line-height: 57px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+  button{
+    transform: translateY(4em);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: normal;
+    color: #000000;
+    margin: 0 auto;
+    width: 300px;
+    max-width: 80%;
+    height: 90px;
+    transition: box-shadow 0.3s;
+    p{
+      margin: 0;
+      margin-top: 6px;
+    }
+    &:hover{
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+    }
+  }
+  
 }
 
 .defaultHeader{
-
     div{
     border-radius: 0px 0px 30px 30px;
     max-width: 84%;
@@ -40,8 +91,6 @@ header{
     
     center{
     h1{
-
-
       font-weight: 900;
       font-size: 48px;
       line-height: 57px;
